@@ -19,6 +19,17 @@ struct StartView: View {
                 .cornerRadius(12)
                 .padding(.horizontal, 20)
                 .padding(.top, 28)
+                NavigationLink {
+                    StatsView()
+                } label: {
+                    Text("검사 통계 보기")
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity, maxHeight: 52)
+                        .background(Color("Main"))
+                }
+                .cornerRadius(12)
+                .padding(.horizontal, 20)
+                .padding(.top, 10)
             }
         }
     }
