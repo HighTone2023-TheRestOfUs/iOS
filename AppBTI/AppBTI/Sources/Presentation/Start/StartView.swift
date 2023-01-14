@@ -15,8 +15,8 @@ struct StartView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, maxHeight: 52)
                         .background(Color("Main"))
+                        .cornerRadius(12)
                 }
-                .cornerRadius(12)
                 .padding(.horizontal, 20)
                 .padding(.top, 28)
                 NavigationLink {

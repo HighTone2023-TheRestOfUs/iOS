@@ -28,10 +28,10 @@ struct SurveyView: View {
                     Text("검사 결과 보기")
                         .font(.system(size: 16, weight: .bold))
                         .foregroundColor(.white)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 52)
+                        .background(Color("Main"))
+                        .cornerRadius(12)
                 }
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 52)
-                .background(Color("Main"))
-                .cornerRadius(12)
                 .padding(.horizontal, 20)
 
             }

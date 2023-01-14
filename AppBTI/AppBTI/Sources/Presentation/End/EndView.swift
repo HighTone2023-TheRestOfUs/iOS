@@ -36,26 +36,26 @@ struct EndView: View {
                 Text("공유하기")
                     .font(.system(size: 16, weight: .bold))
                     .foregroundColor(.white)
+                    .frame(maxWidth: .infinity, maxHeight: 52)
+                    .background(Color("Main"))
+                    .cornerRadius(12)
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 12)
             }
-            .frame(maxWidth: .infinity, maxHeight: 52)
-            .background(Color("Main"))
-            .cornerRadius(12)
-            .padding(.horizontal, 20)
-            .padding(.bottom, 12)
             Button {
                 isPresented = true
             } label: {
                 Text("다시하기")
                     .font(.system(size: 16, weight: .bold))
                     .foregroundColor(Color("Main"))
+                    .frame(maxWidth: .infinity, maxHeight: 52)
+                    .background(.white)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color("Main"), lineWidth: 1)
+                    }
+                    .padding(.horizontal, 20)
             }
-            .frame(maxWidth: .infinity, maxHeight: 52)
-            .background(.white)
-            .overlay {
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color("Main"), lineWidth: 1)
-            }
-            .padding(.horizontal, 20)
 
         }
         .onAppear {
