@@ -4,8 +4,9 @@ struct StartView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                Image("Kakakotalk")
+                Image("Onboarding")
                     .resizable()
+                    .scaledToFill()
                     .background(Color("Gray100"))
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 NavigationLink {
@@ -31,6 +32,7 @@ struct StartView: View {
                 .padding(.horizontal, 20)
                 .padding(.top, 10)
             }
+            .ignoresSafeArea()
         }
     }
 }

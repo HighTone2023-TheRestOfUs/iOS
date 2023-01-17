@@ -5,7 +5,7 @@ struct GroupView2: View {
     @Binding var many: Double
     @Binding var simple: Double
     @State var internetTV: Int = 5
-    @State var arba: Int = 5
+    @State var arba: Int = 6
     @State var shorts: Int = 5
     @State var middle: Int = 5
     @State var sukpack: Int = 5
@@ -117,7 +117,7 @@ struct GroupView2: View {
                 },
                 question: "내가 더 선호하는 숙박 앱은?",
                 appImageName1: "Ya",
-                appImageName2: "Thunder",
+                appImageName2: "This",
                 appName1: "야놀자",
                 appName2: "여기어때"
             )

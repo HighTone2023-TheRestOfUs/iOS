@@ -19,6 +19,7 @@ struct EndView: View {
                 .padding(.bottom, 28)
             Image(data?.imageName ?? "")
                 .resizable()
+                .scaledToFill()
                 .frame(maxWidth: .infinity, maxHeight: 400)
                 .background(Color("Gray100"))
                 .cornerRadius(16)
@@ -74,19 +75,19 @@ struct EndView: View {
     private func toData() -> ImageModel {
         var imageModel: ImageModel = .init(imageName: "", name: "", contnet: "")
         if !fancy && many && simple {
-            imageModel = .init(imageName: "", name: "유명 카페 바리스타", contnet: "설명 : 깔끔한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
+            imageModel = .init(imageName: "Cafe", name: "유명 카페 바리스타", contnet: "설명 : 깔끔한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
         } else if !fancy && many && !simple {
-            imageModel = .init(imageName: "", name: "강남 미인 제조기 성형외과 의사", contnet: "설명 : 깔끔한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들보다는 여러가지 기능들이 합쳐 들어 있는 앱을 좋아합니다.")
+            imageModel = .init(imageName: "Doctor", name: "강남 미인 제조기 성형외과 의사", contnet: "설명 : 깔끔한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들보다는 여러가지 기능들이 합쳐 들어 있는 앱을 좋아합니다.")
         } else if !fancy && !many && simple {
-            imageModel = .init(imageName: "", name: "유별난 결벽증 환자", contnet: "설명 : 깔끔한 디자인을 좋아하며 쳐 매니아층 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
+            imageModel = .init(imageName: "Clean", name: "유별난 결벽증 환자", contnet: "설명 : 깔끔한 디자인을 좋아하며 쳐 매니아층 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
         } else if !fancy && !many && !simple {
-            imageModel = .init(imageName: "", name: "워터 소믈리에", contnet: "설명 : 깔끔한 디자인을 좋아하며 쳐 매니아층 앱을 선호하고 여러가지 기능들이 합쳐 들어 있는 앱을 좋아합니다.")
+            imageModel = .init(imageName: "Water", name: "워터 소믈리에", contnet: "설명 : 깔끔한 디자인을 좋아하며 쳐 매니아층 앱을 선호하고 여러가지 기능들이 합쳐 들어 있는 앱을 좋아합니다.")
         } else if fancy && many && simple {
-            imageModel = .init(imageName: "", name: "응애 나 아기 마술사", contnet: "설명 : 화려한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
+            imageModel = .init(imageName: "Magic", name: "응애 나 아기 마술사", contnet: "설명 : 화려한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
         } else if fancy && many && !simple {
-            imageModel = .init(imageName: "", name: "언니들의 싸움을 펼치는 댄서", contnet: "설명 : 화려한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들보다는 여러가지 기능들이 합쳐 들어 있는 앱을 좋아합니다.")
+            imageModel = .init(imageName: "Dancer", name: "언니들 싸움이다! 스트릿 댄서", contnet: "설명 : 화려한 디자인을 좋아하며 다수의 사람들이 사용하는 앱을 선호하고 간단한 기능들보다는 여러가지 기능들이 합쳐 들어 있는 앱을 좋아합니다.")
         } else if fancy && !many && simple {
-            imageModel = .init(imageName: "", name: "최저시급 민속촌 사물놀이 알바", contnet: "설명 : 화려한 디자인을 좋아하며 쳐 매니아층 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
+            imageModel = .init(imageName: "Money", name: "최저시급 민속촌 사물놀이 알바", contnet: "설명 : 화려한 디자인을 좋아하며 쳐 매니아층 앱을 선호하고 간단한 기능들이 들어 있는 앱을 좋아합니다.")
         } else {
             imageModel = .init(imageName: "", name: "귀멸의 칼날 코스플레이어", contnet: "설명 : 화려한 디자인을 좋아하며 쳐 매니아층 앱을 선호하고 여러가지 기능들이 합쳐 들어 있는 앱을 좋아합니다.")
         }
